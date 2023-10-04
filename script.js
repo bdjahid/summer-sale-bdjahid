@@ -5,9 +5,13 @@ function handleClick(target) {
     const addName = target.childNodes[3].childNodes[3].innerText;
     const li = document.createElement('li');
     li.innerText = addName;
-    addItems.appendChild(li)
+    addItems.appendChild(li);
 
-    console.log(target.childNodes[3].childNodes[5].innerText.split(" "))
+    const price = target.childNodes[3].childNodes[5].innerText.split(" ")[0];
+    total = parseFloat(total) + parseFloat(price);
+    console.log(total)
+    const showPrice = document.getElementById('total');
+    showPrice.innerText = total;
 
 }
 
