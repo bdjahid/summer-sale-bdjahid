@@ -64,7 +64,7 @@
                                         </div>
                                     </h2>
                                     <h5 id="addName" class="text-base font-normal my-2">Accessories</h5>
-                                    <p>39.00 TK</p>
+                                    <p>50.00 TK</p>
                                 </div>
 
                             </div>
@@ -264,9 +264,10 @@
                         <div class="mt-4">
                             <div class="form-control">
                                 <div class="input-group">
-                                    <input type="text" placeholder="Coupon code" class="input input-bordered w-96" />
-                                    <label for="my_modal_6" class="btn btn btn-primary bg-pink-600 border-0">open
-                                        modal</label>
+                                    <input id="input-field" type="text" placeholder="Coupon code"
+                                        class="input input-bordered w-96" />
+                                    <button disabled for="my_modal_6" id="coupon"
+                                        class="btn btn btn-primary bg-pink-600 border-0">Apply</button>
                                     <input type="checkbox" id="my_modal_6" class="modal-toggle" />
                                     <div class="modal">
                                         <div class="modal-box text-center">
@@ -296,7 +297,7 @@
                         <p>Total: <span id="totalPrice">00</span> TK</p>
 
                         <a href="index.html">
-                            <button class="btn btn-primary bg-pink-600 
+                            <button id="btn" disabled class="btn btn-primary bg-pink-600 
                         border-0 w-72 mt-2">
                                 Make Purchase
                             </button>
