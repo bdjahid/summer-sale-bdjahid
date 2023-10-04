@@ -266,23 +266,8 @@
                                 <div class="input-group">
                                     <input id="input-field" type="text" placeholder="Coupon code"
                                         class="input input-bordered w-96" />
-                                    <button disabled for="my_modal_6" id="coupon"
-                                        class="btn btn btn-primary bg-pink-600 border-0">Apply</button>
-                                    <input type="checkbox" id="my_modal_6" class="modal-toggle" />
-                                    <div class="modal">
-                                        <div class="modal-box text-center">
-                                            <div class="flex justify-center">
-                                                <img src="images/congo.png" alt="">
-                                            </div>
-                                            <h3 class="font-bold text-3xl">Congratulations!</h3>
-                                            <p class="py-4">Your Purchase the product!</p>
-                                            <a href="index.html">
-                                                <button class="btn btn-primary bg-pink-600 border-0">
-                                                    Go Home
-                                                </button>
-                                            </a>
-                                        </div>
-                                    </div>
+                                    <button disabled id="coupon" class="btn bg-pink-600">
+                                        Apply</button>
                                 </div>
                             </div>
                         </div>
@@ -296,12 +281,23 @@
                         <p>Discount : <span id="discount">00</span> TK</p>
                         <p>Total: <span id="totalPrice">00</span> TK</p>
 
-                        <a href="index.html">
-                            <button id="btn" disabled class="btn btn-primary bg-pink-600 
-                        border-0 w-72 mt-2">
-                                Make Purchase
-                            </button>
-                        </a>
+
+                        <button disabled id="btn" class="btn bg-pink-600 border-0 w-72 mt-2"
+                            onclick="my_modal_5.showModal()">
+                            Make
+                            Purchase</button>
+                        <dialog id="my_modal_5" class="modal modal-bottom sm:modal-middle">
+                            <div class="modal-box text-center">
+                                <div class="flex justify-center">
+                                    <img src="images/congo.png" alt="">
+                                </div>
+                                <h3 class="font-bold text-3xl">Congratulations!</h3>
+                                <p class="py-4">Your Purchase the product</p>
+                                <a href="index.html">
+                                    <button class="btn bg-pink-600">Go Home</button>
+                                </a>
+                            </div>
+                        </dialog>
                     </div>
                 </div>
             </div>
