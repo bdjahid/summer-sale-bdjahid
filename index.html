@@ -265,10 +265,23 @@
                             <div class="form-control">
                                 <div class="input-group">
                                     <input type="text" placeholder="Coupon code" class="input input-bordered w-96" />
-                                    <button class="btn btn-primary bg-pink-600 
-                                border-0">
-                                        Apply
-                                    </button>
+                                    <label for="my_modal_6" class="btn btn btn-primary bg-pink-600 border-0">open
+                                        modal</label>
+                                    <input type="checkbox" id="my_modal_6" class="modal-toggle" />
+                                    <div class="modal">
+                                        <div class="modal-box text-center">
+                                            <div class="flex justify-center">
+                                                <img src="images/congo.png" alt="">
+                                            </div>
+                                            <h3 class="font-bold text-3xl">Congratulations!</h3>
+                                            <p class="py-4">Your Purchase the product!</p>
+                                            <a href="index.html">
+                                                <button class="btn btn-primary bg-pink-600 border-0">
+                                                    Go Home
+                                                </button>
+                                            </a>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -278,9 +291,9 @@
                     </div>
                     <hr class="bg-neutral-400 my-2 ms-4">
                     <div class="ps-4 space-y-2">
-                        <p>Total price:<span id="total">00</span>TK</p>
-                        <p>Discount :<span>00</span>TK</p>
-                        <p>Total:<span>00</span>TK</p>
+                        <p>Total price: <span id="total">00</span> TK</p>
+                        <p>Discount : <span id="discount">00</span> TK</p>
+                        <p>Total: <span id="totalPrice">00</span> TK</p>
 
                         <a href="index.html">
                             <button class="btn btn-primary bg-pink-600 
