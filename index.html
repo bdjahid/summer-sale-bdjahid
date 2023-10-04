@@ -19,7 +19,7 @@
     </style>
 </head>
 
-<body class="bg-red-50">
+<body class="bg-slate-100">
     <header class="bg-amber-50 !impotent">
         <div class="hero min-h-screen">
             <div class="hero-content flex-col lg:flex-row-reverse gap-24">
@@ -41,12 +41,11 @@
         <section class="mx-10">
 
             <div class="flex flex-col lg:flex-row mt-32 gap-8">
-
                 <div>
                     <div>
                         <h2 class="Work Sans text-4xl font-semibold mb-10 ">Kitchenware</h2>
                         <div class="flex-1 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                            <div class="card card-compact w-72 bg-white-100 shadow-xl p-4">
+                            <div onclick="handleClick(this)" class="card card-compact w-72 bg-white-100 shadow-xl p-4">
                                 <figure class="bg-gray-100"><img src="images/prod1.png" alt="Shoes" class="my-6" />
                                 </figure>
                                 <div class="card-body text-center">
@@ -64,11 +63,12 @@
                                                 class="mask mask-star-2 bg-orange-400" />
                                         </div>
                                     </h2>
-                                    <p class="text-base font-normal my-2">K. Accessories</p>
+                                    <h5 id="addName" class="text-base font-normal my-2">Accessories</h5>
                                     <p>39.00 TK</p>
                                 </div>
+
                             </div>
-                            <div class="card card-compact w-72 bg-white-100 shadow-xl p-4">
+                            <div onclick="handleClick(this)" class="card card-compact w-72 bg-white-100 shadow-xl p-4">
                                 <figure class="bg-gray-100"><img src="images/prod2.png" alt="Shoes" class="my-6" />
                                 </figure>
                                 <div class="card-body text-center">
@@ -86,11 +86,11 @@
                                                 class="mask mask-star-2 bg-orange-400" />
                                         </div>
                                     </h2>
-                                    <p class="text-base font-normal my-2">K. Accessories</p>
+                                    <h5 id="addName1" class="text-base font-normal my-2">K. Accessories</h5>
                                     <p>25.00 TK</p>
                                 </div>
                             </div>
-                            <div class="card card-compact w-72 bg-white-100 shadow-xl p-4">
+                            <div onclick="handleClick(this)" class="card card-compact w-72 bg-white-100 shadow-xl p-4">
                                 <figure class="bg-gray-100"><img src="images/prod3.png" alt="Shoes" class="my-6" />
                                 </figure>
                                 <div class="card-body text-center">
@@ -108,7 +108,7 @@
                                                 class="mask mask-star-2 bg-orange-400" />
                                         </div>
                                     </h2>
-                                    <p class="text-base font-normal my-2">Home Cooker</p>
+                                    <h5 id="addName2" class="text-base font-normal my-2">Home Cooker</h5>
                                     <p>49.00 TK</p>
                                 </div>
                             </div>
@@ -117,7 +117,7 @@
                     <div>
                         <h2 class="Work Sans text-4xl font-semibold mb-10 mt-16 ">Sportswear</h2>
                         <div class="fex-1 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                            <div class="card card-compact w-72 bg-white-100 shadow-xl p-4">
+                            <div onclick="handleClick(this)" class="card card-compact w-72 bg-white-100 shadow-xl p-4">
                                 <figure class="bg-gray-100"><img src="images/prod4.png" alt="Shoes" class="my-6" />
                                 </figure>
                                 <div class="card-body text-center">
@@ -139,7 +139,7 @@
                                     <p>49.00 TK</p>
                                 </div>
                             </div>
-                            <div class="card card-compact w-72 bg-white-100 shadow-xl p-4">
+                            <div onclick="handleClick(this)" class="card card-compact w-72 bg-white-100 shadow-xl p-4">
                                 <figure class="bg-gray-100"><img src="images/prod5.png" alt="Shoes" class="my-6" />
                                 </figure>
                                 <div class="card-body text-center">
@@ -161,7 +161,7 @@
                                     <p>69.00 TK</p>
                                 </div>
                             </div>
-                            <div class="card card-compact w-72 bg-white-100 shadow-xl p-4">
+                            <div onclick="handleClick(this)" class="card card-compact w-72 bg-white-100 shadow-xl p-4">
                                 <figure class="bg-gray-100"><img src="images/prod6.png" alt="Shoes" class="my-6" />
                                 </figure>
                                 <div class="card-body text-center">
@@ -188,7 +188,7 @@
                     <div>
                         <h2 class="Work Sans text-4xl font-semibold mb-10 mt-16">Furniture</h2>
                         <div class="fex-1 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                            <div class="card card-compact w-72 bg-white-100 shadow-xl p-4">
+                            <div onclick="handleClick(this)" class="card card-compact w-72 bg-white-100 shadow-xl p-4">
                                 <figure class="bg-gray-100"><img src="images/prod7.png" alt="Shoes" class="my-6" />
                                 </figure>
                                 <div class="card-body text-center">
@@ -210,7 +210,7 @@
                                     <p>185.00 TK</p>
                                 </div>
                             </div>
-                            <div class="card card-compact w-72 bg-white-100 shadow-xl p-4">
+                            <div onclick="handleClick(this)" class="card card-compact w-72 bg-white-100 shadow-xl p-4">
                                 <figure class="bg-gray-100"><img src="images/prod8.png" alt="Shoes" class="my-6" />
                                 </figure>
                                 <div class="card-body text-center">
@@ -232,7 +232,7 @@
                                     <p>299.00 TK</p>
                                 </div>
                             </div>
-                            <div class="card card-compact w-72 bg-white-100 shadow-xl p-4">
+                            <div onclick="handleClick(this)" class="card card-compact w-72 bg-white-100 shadow-xl p-4">
                                 <figure class="bg-gray-100"><img src="images/prod9.png" alt="Shoes" class="my-6" />
                                 </figure>
                                 <div class="card-body text-center">
@@ -273,12 +273,15 @@
                             </div>
                         </div>
                     </div>
+                    <div class="show-items" id="show-items">
 
+                    </div>
                     <hr class="bg-neutral-400 my-2 ms-4">
                     <div class="ps-4 space-y-2">
-                        <p>Total price: 257.00TK</p>
-                        <p>Discount : 51.40TK</p>
-                        <p>Total: 205.60 TK</p>
+                        <p>Total price:<span id="total">00</span>TK</p>
+                        <p>Discount :<span>00</span>TK</p>
+                        <p>Total:<span>00</span>TK</p>
+
                         <a href="index.html">
                             <button class="btn btn-primary bg-pink-600 
                         border-0 w-72 mt-2">
